@@ -1,0 +1,13 @@
+let display  = document.querySelector('.display');
+let keys = document.querySelectorAll('.key');
+let keyClear = document.querySelector('.clear');
+
+for (let key of keys) {
+key.onclick = function () {
+  display.textContent += key.textContent;
+  }
+}
+  
+keyClear.onclick = function () {
+  display.textContent = '';
+  }
